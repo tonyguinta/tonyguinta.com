@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 const highlights = [
@@ -30,8 +31,14 @@ export default function Home() {
       {/* Hero */}
       <section className="flex flex-col items-center gap-8 py-20 text-center md:py-32">
         <FadeIn>
-          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-2xl font-semibold text-zinc-400">
-            TG
+          <div className="relative h-28 w-28 overflow-hidden rounded-full">
+            <Image
+              src="/images/headshot.jpg"
+              alt="Tony Guinta"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </FadeIn>
 

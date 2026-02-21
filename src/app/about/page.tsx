@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
@@ -39,6 +40,20 @@ export default function AboutPage() {
         <h1 className="mb-12 text-4xl font-bold tracking-tight md:text-5xl">
           About
         </h1>
+      </FadeIn>
+
+      <FadeIn delay={0.05}>
+        <div className="mb-12 flex justify-center">
+          <div className="relative h-48 w-48 overflow-hidden rounded-full md:h-56 md:w-56">
+            <Image
+              src="/images/headshot.jpg"
+              alt="Tony Guinta"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
       </FadeIn>
 
       <div className="prose-article">
@@ -84,6 +99,34 @@ export default function AboutPage() {
             Discovery Channel. The company was significant enough for Liberty
             Media to acquire.
           </p>
+        </FadeIn>
+
+        <FadeIn delay={0.28}>
+          <p>
+            Somewhere along the way, I started ballroom dancing. What began as a
+            social hobby turned competitive fast — my partner Lisa and I trained
+            in Rhythm and Smooth, qualified at nationals, and took home three
+            first-place titles at the 2015 USA Dance National DanceSport
+            Championship. That same drive to master something completely is the
+            thread that connects music, dance, and engineering for me.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.29}>
+          <figure className="my-8">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+              <Image
+                src="/images/dance-nationals.jpg"
+                alt="Tony Guinta and Lisa Mohr competing at the 2015 USA Dance National DanceSport Championship"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <figcaption className="mt-3 text-center text-sm text-muted">
+              Competing at the 2015 USA Dance Nationals with Lisa. Three
+              first-place titles. Photo by Ryan Kenner Photography.
+            </figcaption>
+          </figure>
         </FadeIn>
 
         <FadeIn delay={0.3}>
