@@ -104,24 +104,23 @@ export default function AboutPage() {
         <FadeIn delay={0.28}>
           <p>
             Somewhere along the way, I started ballroom dancing. What began as a
-            social hobby turned competitive fast — my partner Lisa and I trained
-            in Rhythm and Smooth, qualified at nationals, and took home three
-            first-place titles at the 2015 USA Dance National DanceSport
-            Championship. That same drive to master something completely is the
+            social hobby turned competitive fast — my partner Lisa (and future
+            wife) and I trained in Rhythm and Smooth, qualified at nationals,
+            and took home three first-place titles at the 2015 USA Dance
+            National DanceSport Championship. That same drive to master something completely is the
             thread that connects music, dance, and engineering for me.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.29}>
           <figure className="my-8">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-              <Image
-                src="/images/dance-nationals.jpg"
-                alt="Tony Guinta and Lisa Mohr competing at the 2015 USA Dance National DanceSport Championship"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <Image
+              src="/images/dance-nationals.jpg"
+              alt="Tony Guinta and Lisa Mohr competing at the 2015 USA Dance National DanceSport Championship"
+              width={800}
+              height={1067}
+              className="w-full rounded-xl"
+            />
             <figcaption className="mt-3 text-center text-sm text-muted">
               Competing at the 2015 USA Dance Nationals with Lisa. Three
               first-place titles. Photo by Ryan Kenner Photography.
