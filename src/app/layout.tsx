@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Tony Guinta",
   },
   description:
-    "Director of Software Engineering. Built a $2.9B financial platform solo, then led the team that scaled it. 18 years at Optum. AI-native builder.",
+    "Director of Software Engineering. Built an enterprise financial platform solo, then led the team that scaled it. 18 years at a Fortune 5 company. AI-native builder.",
 };
 
 export default function RootLayout({

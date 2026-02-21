@@ -1,7 +1,7 @@
 # tonyguinta.com — Personal Profile Website
 
 ## Project Overview
-Personal profile website for Tony Guinta — Director of Software Engineering, 18 years at Optum, AI-native builder. The site controls the narrative when someone Googles his name. Not a resume rehash — LinkedIn does that. This is the human story, strategic thinking, and proof he's not a typical Director.
+Personal profile website for Tony Guinta — Director of Software Engineering, 18 years at a Fortune 5 healthcare company, AI-native builder. The site controls the narrative when someone Googles his name. Not a resume rehash — LinkedIn does that. This is the human story, strategic thinking, and proof he's not a typical Director.
 
 ## Stack
 - **Next.js 15** (App Router, TypeScript)
@@ -22,10 +22,10 @@ Personal profile website for Tony Guinta — Director of Software Engineering, 1
 
 ### Home (`/`)
 - Hero section: Tony Guinta, headline, short elevator pitch
-- Headline: "Director of Software Engineering | Built a $2.9B Financial Platform Solo → Led the Team That Scaled It | AI-Native Builder"
+- Headline: "Director of Software Engineering | Built an Enterprise Financial Platform Solo → Led the Team That Scaled It | AI-Native Builder"
 - 3-4 highlight cards:
-  1. Built a $2.9B financial platform from scratch
-  2. 18 years scaling teams and systems at Optum
+  1. Built an enterprise financial platform from scratch
+  2. 18 years scaling teams and systems at a Fortune 5 company
   3. AI-native builder (Claude Code, Codex, multi-agent workflows)
   4. Music → Code → Leadership (unconventional path)
 - CTAs to About and Writing sections
@@ -34,7 +34,7 @@ Personal profile website for Tony Guinta — Director of Software Engineering, 1
 ### About (`/about`)
 - Full narrative bio (content provided in `content/about.md`)
 - Career Highlights section at bottom with 4 case study cards:
-  - **OTFIN** — Solo build → $2.9B platform → 20-person org
+  - **Enterprise Financial Platform** — Solo build → Billions in annual spend → 20-person org
   - **DBSIM** — 20K databases, 2PB+ data, automated scanning
   - **Fanball** — VP running 30 people, acquired by Liberty Media
   - **Paramount** — $5M theatrical distribution system, SOX compliance

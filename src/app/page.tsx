@@ -3,9 +3,9 @@ import FadeIn from "@/components/FadeIn";
 
 const highlights = [
   {
-    title: "Built a $2.9B Financial Platform",
+    title: "Built an Enterprise Financial Platform",
     description:
-      "Solo-built the first application that became OTFIN — tracking $2.9 billion annually across non-capital tech expenses, capital purchases, and IT chargeback billing at Optum.",
+      "Solo-built the first application in what became an enterprise financial platform — tracking billions in annual technology spend across a Fortune 5 healthcare company.",
   },
   {
     title: "18 Years Scaling Teams & Systems",
@@ -20,7 +20,7 @@ const highlights = [
   {
     title: "Music → Code → Leadership",
     description:
-      "Jazz guitar at Five Towns College. Cello at Brooklyn Conservatory. A decade at Paramount Pictures. VP at a fantasy sports company. Then 18 years building at Optum.",
+      "Jazz guitar at Five Towns College. Cello at Brooklyn Conservatory. A decade at Paramount Pictures. VP at a fantasy sports company. Then 18 years building enterprise software.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Home() {
 
         <FadeIn delay={0.2}>
           <p className="max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-            Director of Software Engineering | Built a $2.9B Financial Platform
+            Director of Software Engineering | Built an Enterprise Financial Platform
             Solo &rarr; Led the Team That Scaled It | AI-Native Builder
           </p>
         </FadeIn>

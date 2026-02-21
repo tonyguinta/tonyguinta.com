@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 const caseStudies = [
   {
-    name: "OTFIN",
-    tagline: "Solo Build → $2.9B Platform → 20-Person Org",
+    name: "Enterprise Financial Platform",
+    tagline: "Solo Build → Billions in Annual Spend → 20-Person Org",
     description:
-      "Built the first application solo — requirements gathering, architecture, development, production deployment. Ran it in production for nearly a year before getting budget to hire. Grew it into a 20-person product organization tracking $2.9B annually.",
+      "Built the first application solo — requirements gathering, architecture, development, production deployment. Ran it in production for nearly a year before getting budget to hire. Grew it into a 20-person product organization tracking billions in annual technology spend.",
   },
   {
     name: "DBSIM",
@@ -88,8 +88,8 @@ export default function AboutPage() {
 
         <FadeIn delay={0.3}>
           <p>
-            Then in 2008, I joined Optum. I built the first application in what
-            became OTFIN — a financial platform tracking $2.9 billion annually
+            Then in 2008, I joined a Fortune 5 healthcare company. I built the first application in what
+            became a financial platform tracking billions in annual technology spend
             across non-capital tech expenses, capital purchases, and IT
             chargeback billing. I built v1 solo. Requirements gathering,
             architecture, development, production deployment. I ran it in
