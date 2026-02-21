@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { marked } from "marked";
 import FadeIn from "@/components/FadeIn";
-import { getArticle, articles } from "@/lib/articles";
-import ContentAggregatorThesis from "./content-aggregator-thesis";
+import { getArticle, getAllArticles } from "@/lib/articles";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return articles
+  return getAllArticles()
     .filter((a) => a.status === "published")
     .map((a) => ({ slug: a.slug }));
 }
@@ -22,23 +22,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: article.title };
 }
 
-const articleComponents: Record<string, React.ComponentType> = {
-  "content-aggregator-thesis": ContentAggregatorThesis,
-};
-
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const article = getArticle(slug);
 
-  if (!article || article.status !== "published") {
+  if (!article) {
     notFound();
   }
 
-  const ArticleContent = articleComponents[slug];
-
-  if (!ArticleContent) {
-    notFound();
-  }
+  const html = marked(article.content);
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
@@ -72,9 +64,10 @@ export default async function ArticlePage({ params }: Props) {
       </FadeIn>
 
       <FadeIn delay={0.15}>
-        <div className="prose-article">
-          <ArticleContent />
-        </div>
+        <div
+          className="prose-article"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </FadeIn>
     </div>
   );

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
-import { articles } from "@/lib/articles";
+import { getAllArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
   title: "Writing",
 };
 
 export default function WritingPage() {
+  const articles = getAllArticles();
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
       <FadeIn>
