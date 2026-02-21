@@ -50,7 +50,7 @@ Personal profile website for Tony Guinta — Director of Software Engineering, 1
 
 ### Contact
 - Can be a footer section on every page OR a minimal `/contact` page
-- Links: Email (tonyguinta@gmail.com), LinkedIn (linkedin.com/in/tonyguinta), X (@TwoPartyLie)
+- Links: Email (tonyguinta@gmail.com), LinkedIn (linkedin.com/in/tonyguinta), X (@TonyGuinta)
 - No contact form — just clean links
 
 ## Navigation

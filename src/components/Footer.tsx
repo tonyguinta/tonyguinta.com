@@ -21,7 +21,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://x.com/TwoPartyLie"
+            href="https://x.com/TonyGuinta"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted transition-colors hover:text-foreground"

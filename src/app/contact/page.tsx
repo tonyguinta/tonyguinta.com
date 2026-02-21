@@ -18,8 +18,8 @@ const links = [
   },
   {
     label: "X",
-    href: "https://x.com/TwoPartyLie",
-    display: "@TwoPartyLie",
+    href: "https://x.com/TonyGuinta",
+    display: "@TonyGuinta",
   },
 ];
 
