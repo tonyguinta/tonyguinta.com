@@ -136,4 +136,4 @@ The teams who internalize those two ideas — engineers, product owners, and eve
 
 ---
 
-*By Tony Guinta · @TonyGuinta · 2026*
+*By Tony Guinta · 2026*

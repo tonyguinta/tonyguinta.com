@@ -21,7 +21,7 @@ const highlights = [
   {
     title: "Music → Code → Leadership",
     description:
-      "Jazz guitar at Five Towns College. Cello at Brooklyn Conservatory. A decade at Paramount Pictures. VP at a fantasy sports company. Director at Optum building enterprise software.",
+      "Studied guitar at Five Towns College. Cello at Brooklyn Conservatory. A decade at Paramount Pictures. VP at a fantasy sports company. Director at Optum building enterprise software.",
   },
 ];
 

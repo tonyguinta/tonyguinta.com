@@ -16,11 +16,6 @@ const links = [
     href: "https://linkedin.com/in/tonyguinta",
     display: "linkedin.com/in/tonyguinta",
   },
-  {
-    label: "X",
-    href: "https://x.com/TonyGuinta",
-    display: "@TonyGuinta",
-  },
 ];
 
 export default function ContactPage() {
