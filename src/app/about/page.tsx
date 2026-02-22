@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
+import { getAboutContent } from "@/lib/about";
 
 export const metadata: Metadata = {
   title: "About",
@@ -34,6 +35,8 @@ const caseStudies = [
 ];
 
 export default function AboutPage() {
+  const sections = getAboutContent();
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
       <FadeIn>
@@ -57,62 +60,22 @@ export default function AboutPage() {
       </FadeIn>
 
       <div className="prose-article">
-        <FadeIn delay={0.1}>
-          <p>
-            I wanted to be a rock star. Studied jazz guitar and bass at Five
-            Towns College on Long Island, then auditioned into the Brooklyn
-            College Conservatory on cello. I was good enough to get in. I
-            wasn&apos;t good enough to sight-read at the speed the program
-            demanded. So I pivoted.
-          </p>
-        </FadeIn>
+        {/* Section 1: Music origins + early tech */}
+        {sections[0] && (
+          <FadeIn delay={0.1}>
+            <div dangerouslySetInnerHTML={{ __html: sections[0] }} />
+          </FadeIn>
+        )}
 
-        <FadeIn delay={0.15}>
-          <p>
-            I&apos;d always been the kid who could make a computer do things. My
-            first internet account was a Netcom shell — command line, no browser.
-            I was optimizing autoexec.bat and config.sys on Windows 3.1 while my
-            friends were still figuring out how to print. When the music path
-            closed, the tech path was already there.
-          </p>
-        </FadeIn>
+        {/* Section 2: Paramount, Fanball, Dance */}
+        {sections[1] && (
+          <FadeIn delay={0.2}>
+            <div dangerouslySetInnerHTML={{ __html: sections[1] }} />
+          </FadeIn>
+        )}
 
-        <FadeIn delay={0.2}>
-          <p>
-            In 1996 I landed at Paramount Pictures, where I spent the next
-            decade building technology for motion picture distribution and
-            licensing. A $5 million theatrical distribution system across an
-            international WAN. IP licensing and music clearance systems spanning
-            Paramount and CBS Television. Annual IT budgets, SOX compliance,
-            meetings with the division CTO. I walked in as a developer and
-            walked out managing the whole operation.
-          </p>
-        </FadeIn>
-
+        {/* Dance photo */}
         <FadeIn delay={0.25}>
-          <p>
-            After Paramount, I moved to Minnesota and took a VP role at a
-            fantasy sports company called Fanball — one of the biggest platforms
-            in the country before ESPN and Yahoo showed up with free leagues. I
-            ran a team of about 30 across product, engineering, design, and
-            content. We built custom applications for AOL, NASCAR, PGA Tour,
-            Discovery Channel. The company was significant enough for Liberty
-            Media to acquire.
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.28}>
-          <p>
-            Somewhere along the way, I started ballroom dancing. What began as a
-            social hobby turned competitive fast — my partner Lisa (and future
-            wife) and I trained in Rhythm and Smooth, qualified at nationals,
-            and took home three first-place titles at the 2015 USA Dance
-            National DanceSport Championship. That same drive to master something completely is the
-            thread that connects music, dance, and engineering for me.
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.29}>
           <figure className="my-8">
             <Image
               src="/images/dance-nationals.jpg"
@@ -128,50 +91,12 @@ export default function AboutPage() {
           </figure>
         </FadeIn>
 
-        <FadeIn delay={0.3}>
-          <p>
-            Then in 2008, I joined a Fortune 5 healthcare company. I built the first application in what
-            became a financial platform tracking billions in annual technology spend
-            across non-capital tech expenses, capital purchases, and IT
-            chargeback billing. I built v1 solo. Requirements gathering,
-            architecture, development, production deployment. I ran it in
-            production for nearly a year before leadership gave me budget to
-            hire. That first app became a suite, and I grew the team from just
-            me to a 20-person product organization spanning engineering, product,
-            and QA. Eighteen years later, the platform and the team are still
-            running.
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.35}>
-          <p>
-            Every chapter of my career has the same pattern: start with nothing,
-            build something that works, prove its value, then scale it. I&apos;ve
-            never been the kind of leader who stops being technical. I still
-            review code. I still know the codebase. I built DBSIM — a database
-            inventory and metrics system covering 20,000+ databases and 2
-            petabytes of data — because I saw the gap and filled it.
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.4}>
-          <p>
-            Right now I&apos;m deep in the AI engineering space. Not the slide
-            deck version — the real one. I build full-stack applications with
-            Claude Code. I run multi-agent workflows with automated pipelines,
-            browser automation, and cron-scheduled tasks. I&apos;m leading a
-            Codex pilot to bring AI coding tools into my team&apos;s daily
-            workflow. I&apos;ve been hands-on with these tools since early 2025,
-            and the gap between what AI can actually do and what most engineering
-            leaders think it can do is enormous.
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.45}>
-          <p className="text-lg font-medium text-foreground">
-            I&apos;m looking for the next thing to build.
-          </p>
-        </FadeIn>
+        {/* Section 3: Fortune 5, DBSIM, AI, closing */}
+        {sections[2] && (
+          <FadeIn delay={0.3}>
+            <div dangerouslySetInnerHTML={{ __html: sections[2] }} />
+          </FadeIn>
+        )}
       </div>
 
       <section className="mt-20">
