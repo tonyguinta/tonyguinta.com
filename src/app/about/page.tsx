@@ -9,28 +9,22 @@ export const metadata: Metadata = {
 
 const caseStudies = [
   {
-    name: "Enterprise Financial Platform",
-    tagline: "Solo Build → Billions in Annual Spend → 20-Person Org",
+    name: "Optum (UnitedHealth Group)",
+    tagline: "Two Platforms, Two Orgs, Built from Scratch",
     description:
-      "Built the first application solo — requirements gathering, architecture, development, production deployment. Ran it in production for nearly a year before getting budget to hire. Grew it into a 20-person product organization tracking billions in annual technology spend.",
-  },
-  {
-    name: "DBSIM",
-    tagline: "20K Databases, 2PB+ Data, Automated Scanning",
-    description:
-      "Built a database inventory and metrics system covering 20,000+ databases and 2 petabytes of data. Identified the gap, designed the solution, and built it — because that's what needed to happen.",
+      "Built DBSIM — a database inventory system covering 20,000+ databases and 2 petabytes of data. Later built a financial platform tracking billions in annual technology spend, solo from requirements to production. Grew both into 20-person organizations.",
   },
   {
     name: "Fanball",
-    tagline: "VP Running 30 People, Acquired by Liberty Media",
+    tagline: "VP in 4 Months, 30-Person Team, Liberty Media Acquisition",
     description:
-      "VP at one of the biggest fantasy sports platforms in the country. Ran a team of 30 across product, engineering, design, and content. Built custom applications for AOL, NASCAR, PGA Tour, Discovery Channel.",
+      "One of the biggest fantasy sports platforms in the country. Led a team of 30 across product, engineering, design, and content. Built custom applications for AOL, NASCAR, PGA Tour, Discovery Channel.",
   },
   {
-    name: "Paramount",
-    tagline: "$5M Theatrical Distribution System, SOX Compliance",
+    name: "Paramount Pictures",
+    tagline: "$5M Distribution System, Decade of Motion Picture Tech",
     description:
-      "Spent a decade at Paramount Pictures building technology for motion picture distribution and licensing. A $5 million theatrical distribution system across an international WAN. IP licensing, music clearance, annual IT budgets, SOX compliance.",
+      "A decade building technology for motion picture distribution and licensing. $5 million theatrical distribution system across an international WAN. IP licensing, music clearance systems spanning Paramount and CBS Television. SOX compliance.",
   },
 ];
 
@@ -59,27 +53,29 @@ export default function AboutPage() {
         </div>
       </FadeIn>
 
+      {/* Executive summary */}
       <div className="prose-article">
-        {/* Section 1: Music origins + early tech */}
         {sections[0] && (
           <FadeIn delay={0.1}>
-            <div dangerouslySetInnerHTML={{ __html: sections[0] }} />
+            <div className="text-lg" dangerouslySetInnerHTML={{ __html: sections[0] }} />
           </FadeIn>
         )}
+      </div>
 
-        {/* Section 2: Paramount, Fanball, Dance */}
+      <div className="prose-article">
+        {/* Section 2: Brooklyn origins, music, dance, early tech */}
         {sections[1] && (
-          <FadeIn delay={0.2}>
+          <FadeIn delay={0.15}>
             <div dangerouslySetInnerHTML={{ __html: sections[1] }} />
           </FadeIn>
         )}
 
         {/* Dance photo */}
-        <FadeIn delay={0.25}>
+        <FadeIn delay={0.2}>
           <figure className="my-8">
             <Image
               src="/images/dance-nationals.jpg"
-              alt="Tony Guinta and Lisa Mohr competing at the 2015 USA Dance National DanceSport Championship"
+              alt="Tony Guinta and Lisa competing at the 2015 USA Dance National DanceSport Championship"
               width={800}
               height={1067}
               className="w-full rounded-xl"
@@ -91,9 +87,9 @@ export default function AboutPage() {
           </figure>
         </FadeIn>
 
-        {/* Section 3: Fortune 5, DBSIM, AI, closing */}
+        {/* Section 3: Paramount → Fanball → Optum → AI → closing */}
         {sections[2] && (
-          <FadeIn delay={0.3}>
+          <FadeIn delay={0.25}>
             <div dangerouslySetInnerHTML={{ __html: sections[2] }} />
           </FadeIn>
         )}
