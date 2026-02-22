@@ -9,19 +9,19 @@ const highlights = [
       "Solo-built the first application in what became an enterprise financial platform — tracking billions in annual technology spend across a Fortune 5 healthcare company.",
   },
   {
-    title: "18 Years Scaling Teams & Systems",
+    title: "Scaling Teams & Systems",
     description:
       "Grew a one-person build into a 20-person product organization spanning engineering, product, and QA. The platform and team are still running.",
   },
   {
     title: "AI-Native Builder",
     description:
-      "Building full-stack applications with Claude Code. Running multi-agent workflows with automated pipelines. Leading a Codex pilot for enterprise AI adoption.",
+      "Building full-stack applications with agentic AI tools. Running multi-agent workflows with automated pipelines. Leading an AI-driven product development pilot for enterprise AI adoption.",
   },
   {
     title: "Music → Code → Leadership",
     description:
-      "Jazz guitar at Five Towns College. Cello at Brooklyn Conservatory. A decade at Paramount Pictures. VP at a fantasy sports company. Then 18 years building enterprise software.",
+      "Jazz guitar at Five Towns College. Cello at Brooklyn Conservatory. A decade at Paramount Pictures. VP at a fantasy sports company. Director at Optum building enterprise software.",
   },
 ];
 
