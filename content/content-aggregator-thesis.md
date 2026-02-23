@@ -92,4 +92,4 @@ Someone with the capital, the business development muscle, and the patience to s
 
 ---
 
-*By Tony Guinta · [@TonyGuinta](https://x.com/TonyGuinta) · 2026*
+*By Tony Guinta · [@TonyGuinta](https://x.com/TonyGuinta) · February 2026*
