@@ -17,6 +17,8 @@ AI agents are breaking the equation. A growing number of people don't open Twitt
 
 Every single one of those interactions is an ad impression that never happens.
 
+There's a growing conversation about whether AI will kill applications entirely. I don't think it will. People still want rich, interactive experiences — you're not going to watch a movie through an API call. But what IS changing, fast, is how content gets accessed. More and more of the interactions that used to require opening an app and scrolling a feed are happening through agents instead. The app isn't dying. The assumption that everyone accesses your content through your app is.
+
 ## The Retaliation Phase (We're Living Through It)
 
 The platforms see this coming. Their first instinct is to fight it. Twitter killed its free API and moved to enterprise pricing at $42,000 a month. Reddit started charging for API access, nuking its entire third-party app ecosystem overnight. CAPTCHAs are multiplying. Bot detection is getting more aggressive. Rate limits are tightening across the board.
