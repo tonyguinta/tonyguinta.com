@@ -2,7 +2,7 @@
 title: "The Advertising Model Is Dying. Here's What Replaces It."
 subtitle: "Why the future of content monetization is a universal pass-through marketplace, and why every platform should want in."
 description: "The ad-supported internet is dying. A universal content marketplace — where creators set prices and platforms compete on curation — is the inevitable replacement."
-slug: "content-aggregator-thesis"
+slug: "ad-model-dying"
 date: "2026-02-15"
 readTime: "8 min read"
 status: "published"
@@ -12,9 +12,9 @@ status: "published"
 
 ## The Problem Nobody Wants to Talk About
 
-Every major content platform runs on the same basic deal. Google, X, Meta, Reddit, YouTube: you get the content for free, they get to show you ads. It worked for two decades. That run is ending.
+Every major content platform runs on the same basic deal. Google, X, Meta, Reddit, YouTube — you get the content for free, they get to show you ads. It worked for two decades. That run is ending.
 
-AI agents are breaking the equation. A growing number of people don't open Twitter to scroll a feed anymore. They have an agent pull the relevant information and deliver it in a morning briefing. They don't spend an hour browsing YouTube. They have an agent extract the key points from a video and hand them a summary. They don't click through ten Google results. They get a synthesized answer.
+AI agents are breaking the equation. A growing number of people don't open X to scroll a feed anymore. They have an agent pull the relevant information and deliver it in a morning briefing. They don't spend an hour browsing YouTube. They have an agent extract the key points from a video and hand them a summary. They don't click through ten Google results. They get a synthesized answer.
 
 Every single one of those interactions is an ad impression that never happens.
 
@@ -22,17 +22,15 @@ There's a growing conversation about whether AI will kill applications entirely.
 
 ## The Retaliation Phase (We're Living Through It)
 
-The platforms see this coming. Their first instinct is to fight it. Twitter killed its free API and moved to enterprise pricing at $42,000 a month. Reddit started charging for API access, nuking its entire third-party app ecosystem overnight. CAPTCHAs are multiplying. Bot detection is getting more aggressive. Rate limits are tightening across the board.
+The platforms see this coming. Their first instinct is to fight it. X killed its free API tier entirely — basic access now starts at $200 a month, with enterprise pricing running over $42,000. Reddit started charging for API access, nuking its entire third-party app ecosystem overnight. CAPTCHAs are multiplying. Bot detection is getting more aggressive. Rate limits are tightening across the board.
 
-Here's the thing, though. These measures don't just block AI agents. They punish regular users. Every time you prove you're not a robot, every time a page loads slower because of anti-bot JavaScript, every time a third-party app you relied on gets killed? That's the platform making *your* experience worse to fight a technological shift it can't actually stop.
-
-Because it can't stop it. AI agents will access content one way or another. Through APIs, through browser automation, through whatever comes next. The arms race between platforms and agents is one the platforms lose, and their actual paying customers absorb the damage along the way.
+Here's the thing, though. These measures don't just block AI agents. They punish regular users. Every time you prove you're not a robot, every time a page loads slower because of anti-bot JavaScript, every time a third-party app you relied on gets killed? That's the platform making *your* experience worse to fight a technological shift it can't actually stop. AI agents will access content one way or another — through APIs, through browser automation, through whatever comes next. The arms race between platforms and agents is one the platforms lose, and their actual paying customers absorb the damage along the way.
 
 ## The Subscription Trap
 
 "Fine," you say. "People will just subscribe." And sure, many do. Look at where that's gotten us.
 
-The average household now juggles Netflix, Hulu, Disney+, Max, Peacock, Paramount+, YouTube Premium, Spotify, Apple Music, the New York Times, The Athletic, a handful of Substacks, and various productivity tools. That's easily $200+ a month spread across dozens of individual subscriptions. Each one has its own account, its own billing cycle, its own cancellation process that's intentionally designed to be annoying.
+The average household now juggles streaming services, music platforms, news subscriptions, fitness apps, cloud storage, creative tools, a handful of Substacks, and whatever else snuck into their credit card statement last quarter. That's easily $200+ a month spread across dozens of individual subscriptions. Each one has its own account, its own billing cycle, its own cancellation process that's intentionally designed to be annoying.
 
 People went from "cutting the cord" to managing more subscriptions than they ever had cable channels. The model doesn't scale. It fragments the customer's attention and wallet into pieces too small for any single platform to matter.
 
@@ -48,7 +46,7 @@ And because it's usage-based, turning services on and off becomes trivial. There
 
 Here's where it gets interesting from a market dynamics perspective: those spending caps would actually help set the market. If a large number of users are capping their Spotify spend at $15 a month and running out of utilization halfway through, that's a signal. It tells Spotify their per-use rate is too high relative to what customers are willing to pay. The aggregated cap data becomes real-time market feedback that helps providers find the right price point. Too expensive and users hit their caps early, get frustrated, and lower them next month or turn the service off entirely. Too cheap and you're leaving money on the table. The market finds its own equilibrium, driven by actual usage patterns instead of some executive's guess about what a monthly subscription should cost.
 
-If you're building or using AI agents, your agent authenticates once through this hub and gets access to every platform you've opted into. No setting up individual API accounts with Twitter, Google, Spotify, and fifty other services. No managing separate API keys and billing relationships with each one. One integration point, one credential, done.
+If you're building or using AI agents, your agent authenticates once through this hub and gets access to every platform you've opted into. No setting up individual API accounts with X, Google, Spotify, and fifty other services. No managing separate API keys and billing relationships with each one. One integration point, one credential, done.
 
 For the platforms, this solves the monetization problem they're currently trying to brute-force. Instead of spending money fighting AI agents that bypass their ad-supported UI, they get paid directly for their content. Every agent query becomes a revenue event. They don't need to build and maintain relationships with millions of individual API consumers because the hub handles distribution. A new, scalable revenue stream that grows right alongside the agent economy.
 
@@ -60,7 +58,7 @@ The same opportunity exists right now for content.
 
 ## The Pitch to Platforms
 
-Here's what should make this compelling for content companies: **your customers are already leaving, and you're spending money making them leave faster.**
+Here's what should make this compelling for content companies: **your customers are already leaving, and you're accelerating the exit.**
 
 Every anti-bot measure that degrades the user experience pushes more people toward agents and away from your UI. Every API lockdown sends a signal that you'd rather have zero relationship with agent-native users than a profitable one.
 
@@ -89,9 +87,9 @@ Better to be early than late. Plaid proved that.
 
 ## The Call
 
-I'm not going to build this myself. I've got a day job, a side project, and plenty on my plate already. But I've spent months living this problem as someone who uses AI agents every day, and the friction is undeniable. Setting up individual API accounts with each platform, managing separate OAuth tokens, dealing with rate limits and surprise policy changes. It's painful for someone technical. It's impossible for everyone else.
+This isn't a side project. The technology is the easy part — any competent engineering team could build the platform itself. The hard part is the business development: sitting across the table from X, Google, Spotify, and dozens of other platforms to negotiate pass-through rates. That takes venture-scale capital, a BD team with real leverage, and the operational stamina to manage those relationships for years. That's a company, not a weekend project.
 
-Someone with the capital, the business development muscle, and the patience to sit across the table from these big platforms needs to make this happen. The idea is sound. The timing is right. And it's one of those rare situations where everybody wins. Users get simplicity and transparency. Platforms get a new revenue stream. Agent builders get the access they need. The ad-supported internet had a solid run. What comes next should work better for all of us.
+Someone with that capital and that patience needs to make this happen. The idea is sound. The timing is right. And it's one of those rare situations where everybody wins. Users get simplicity and transparency. Platforms get a new revenue stream. Agent builders get the access they need. The ad-supported internet had a solid run. What comes next should work better for all of us.
 
 ---
 
