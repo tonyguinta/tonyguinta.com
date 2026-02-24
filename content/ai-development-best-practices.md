@@ -1,6 +1,7 @@
 ---
 title: "AI Development Best Practices"
 subtitle: "There are no best practices. Here's what actually works."
+description: "Context engineering and treating AI agents as domain experts — two concepts that actually hold up when building with AI in 2026."
 slug: "ai-development-best-practices"
 date: "2026-02-21"
 readTime: "12 min read"

@@ -6,6 +6,7 @@ export interface Article {
   slug: string;
   title: string;
   subtitle?: string;
+  description?: string;
   date: string;
   readTime: string;
   status: "published" | "coming-soon" | "draft";
@@ -46,6 +47,7 @@ function getMarkdownArticles(): Article[] {
       slug: data.slug,
       title: data.title,
       subtitle: data.subtitle,
+      description: data.description || data.subtitle,
       date: data.date,
       readTime: data.readTime || "",
       status: data.status,

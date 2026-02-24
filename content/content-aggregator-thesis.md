@@ -1,6 +1,7 @@
 ---
 title: "The Advertising Model Is Dying. Here's What Replaces It."
 subtitle: "Why the future of content monetization is a universal pass-through marketplace, and why every platform should want in."
+description: "The ad-supported internet is dying. A universal content marketplace — where creators set prices and platforms compete on curation — is the inevitable replacement."
 slug: "content-aggregator-thesis"
 date: "2026-02-15"
 readTime: "8 min read"

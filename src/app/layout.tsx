@@ -15,13 +15,41 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://tonyguinta.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Tony Guinta — Director of Software Engineering",
     template: "%s | Tony Guinta",
   },
   description:
     "Director of Software Engineering. Built an enterprise financial platform solo, then led the team that scaled it. 18 years at a Fortune 5 company. AI-native builder.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Tony Guinta",
+    title: "Tony Guinta — Director of Software Engineering",
+    description:
+      "Built an enterprise financial platform solo, then led the team that scaled it. 18 years at a Fortune 5 company. AI-native builder.",
+    images: [
+      {
+        url: "/images/headshot.jpg",
+        width: 800,
+        height: 800,
+        alt: "Tony Guinta",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Tony Guinta — Director of Software Engineering",
+    description:
+      "Built an enterprise financial platform solo, then led the team that scaled it. 18 years at a Fortune 5 company. AI-native builder.",
+    creator: "@TonyGuinta",
+    images: ["/images/headshot.jpg"],
+  },
 };
 
 export default function RootLayout({

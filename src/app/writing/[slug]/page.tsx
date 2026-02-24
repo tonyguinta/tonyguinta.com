@@ -19,7 +19,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) return {};
-  return { title: article.title };
+
+  const description = article.description || article.subtitle || "";
+
+  return {
+    title: article.title,
+    description,
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description,
+      url: `/writing/${article.slug}`,
+      authors: ["Tony Guinta"],
+      publishedTime: article.date,
+    },
+    twitter: {
+      card: "summary",
+      title: article.title,
+      description,
+      creator: "@TonyGuinta",
+    },
+  };
 }
 
 export default async function ArticlePage({ params }: Props) {
