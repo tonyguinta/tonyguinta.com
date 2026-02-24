@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
-const aboutPath = path.join(process.cwd(), "content", "about.md");
+const aboutPath = path.join(process.cwd(), "content", "pages", "about.md");
 
 export function getAboutContent(): string[] {
   const raw = fs.readFileSync(aboutPath, "utf-8");
