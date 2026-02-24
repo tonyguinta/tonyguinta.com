@@ -1,14 +1,14 @@
 ---
-title: "AI Development Best Practices"
+title: 'AI Development Best Practices'
 subtitle: "There are no best practices. Here's what actually works."
-description: "Context engineering and treating AI agents as domain experts — two concepts that actually hold up when building with AI in 2026."
-slug: "ai-development-best-practices"
-date: "2026-02-21"
-readTime: "12 min read"
-status: "published"
+description: 'Context engineering and treating AI agents as domain experts — two concepts that actually hold up when building with AI in 2026.'
+slug: 'ai-development-best-practices'
+date: '2026-02-21'
+readTime: '12 min read'
+status: 'published'
 ---
 
-If anyone tells you they have an AI development best practice, they're full of shit.
+If anyone tells you they have an AI development best practice, they're blowing smoke.
 
 We're all figuring this out in real time, compensating for current limitations, and hoping our approaches don't look ridiculous six months from now. Anyone claiming they've figured out the definitive way to develop with AI is either selling you something or parroting what worked for them once.
 
@@ -137,4 +137,4 @@ The teams who internalize those two ideas — engineers, product owners, and eve
 
 ---
 
-*By Tony Guinta · [@TonyGuinta](https://x.com/TonyGuinta) · February 2026*
+_By Tony Guinta · [@TonyGuinta](https://x.com/TonyGuinta) · February 2026_
