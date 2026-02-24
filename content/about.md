@@ -1,7 +1,7 @@
 ---
 title: "About"
 slug: "about"
-status: "published"
+status: "page"
 ---
 
 Director of Software Engineering who builds zero-to-one platforms and scales the teams that run them. Currently leading a 20-person product organization at Optum and piloting AI-driven development across the team. I stay hands-on — I still write code, design data models, and ship.
