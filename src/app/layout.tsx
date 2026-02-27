@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Tony Guinta — Director of Software Engineering",
     description:
       "Built an enterprise financial platform solo, then led the team that scaled it. 18 years at a Fortune 5 company. AI-native builder.",
